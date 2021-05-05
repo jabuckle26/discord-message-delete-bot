@@ -24,7 +24,7 @@ async def on_ready():
 async def on_message(message_event):
     if is_bot_tagged(message_event.content):
         logging.info('Bot was tagged.')
-        await message_event.channel.send("Don't @ me...")
+        await message_event.channel.send("Don't @ me...Get back to work!")
 
     if is_bot_command(message_event.content):
         await determine_bot_command(message_event)
